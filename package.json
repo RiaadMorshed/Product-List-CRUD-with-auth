@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Api for product",
   "main": "server.js",
+  "engines": {
+    "node": "16.15.0",
+    "npm":"8.5.5"
+},
   "scripts": {
     "build": "cd client && npm run build",
     "install-client": "cd client && npm install",
