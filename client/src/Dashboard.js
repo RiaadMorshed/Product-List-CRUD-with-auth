@@ -58,7 +58,7 @@ export default class Dashboard extends Component {
       this.setState({ loading: false, products: res.data.products, pages: res.data.pages });
     }).catch((err) => {
       swal({
-        text: err.response.data.errorMessage,
+        text: err,
         icon: "error",
         type: "error"
       });
@@ -87,7 +87,7 @@ export default class Dashboard extends Component {
       });
     }).catch((err) => {
       swal({
-        text: err.response.data.errorMessage,
+        text: err,
         icon: "error",
         type: "error"
       });
@@ -145,7 +145,7 @@ export default class Dashboard extends Component {
       });
     }).catch((err) => {
       swal({
-        text: err.response.data.errorMessage,
+        text: err,
         icon: "error",
         type: "error"
       });
@@ -183,7 +183,7 @@ export default class Dashboard extends Component {
       });
     }).catch((err) => {
       swal({
-        text: err.response.data.errorMessage,
+        text: err,
         icon: "error",
         type: "error"
       });
